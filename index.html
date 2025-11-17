@@ -17,9 +17,43 @@
             <ul>
                 <li><strong>Cours de danse :</strong>
                     <ul>
-                        <li>Danse classique</li>
-                        <li>Moderne Jazz</li>
-                        <li>Danse contemporaine</li>
+                        <li>
+                            <span>Danse moderne</span>
+                            <ul>
+                                <li>Lundi :</li>
+                                <ul>
+                                    <li>18h-19h : Adolescent</li>
+                                    <li>20h-21h : Adulte</li>
+                                </ul>
+                                <li>Mercredi :</li>
+                                <ul>
+                                    <li>16h-17h : Éveil</li>
+                                    <li>17h-18h : Enfant</li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Danse contemporaine</span>
+                            <ul>
+                                <li>Jeudi :</li>
+                                <ul>
+                                    <li>18h-19h : Adolescent</li>
+                                    <li>20h-21h : Adulte</li>
+                                    <li>16h-17h : Éveil</li>
+                                    <li>17h-18h : Enfant</li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Danse classique</span>
+                            <ul>
+                                <li>Samedi :</li>
+                                <ul>
+                                    <li>Horaires à définir selon le niveau</li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li>Hip-hop</li>
                     </ul>
                 </li>
                 <li><strong>Événements phares :</strong>
@@ -27,6 +61,7 @@
                         <li>Galas de fin d'année</li>
                         <li>Stages thématiques ou découverte</li>
                         <li>Journées Portes Ouvertes (JPO)</li>
+                        <li>Soirée dansante mensuelle</li>
                     </ul>
                 </li>
             </ul>
@@ -41,7 +76,8 @@
                 <li>Informations pratiques :
                     <ul>
                         <li>Modalités d’adhésion</li>
-                        <l>Horaires des cours et événements</l>
+                        <li>Horaires des cours et événements</li>
+                        <li>Lieu : 12 rue de la Danse, Paris</li>
                     </ul>
                 </li>
             </ul>
@@ -49,6 +85,15 @@
 
         <section id="contact">
             <h2>Contact & Infos</h2>
+            <form id="contact-form">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
             <button id="show-info">Voir les infos d’adhésion</button>
             <div id="adhesion-info" style="display:none;">
                 <p>Pour toute question, n’hésitez pas à nous contacter ou à consulter nos supports dédiés.<br>
@@ -56,6 +101,9 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Club Elan & Grace - Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
