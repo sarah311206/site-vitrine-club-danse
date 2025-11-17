@@ -1,9 +1,18 @@
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #FAFAFA;
+    background-image: url('file:///C:/Users/24ps214/Downloads/thumbnail_IMG_1961.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Optionnel : Pour rendre le texte plus lisible */
     color: #222;
+    background-attachment: fixed;
+}
+header, main, footer {
+    background: rgba(255,255,255,0.85);
+    padding: 1.5em;
+    margin: 2em auto;
+    border-radius: 1em;
+    max-width: 900px;
 }
 header {
     background: #ffd7e6;
