@@ -8,44 +8,55 @@
 <body>
     <header>
         <h1>Elan & Grace</h1>
-        <p>Bienvenue au Club Elan & Grace, dédié à l’art de la danse sous toutes ses formes !</p>
+        <!-- Menu de navigation, chaque bouton affiche une section -->
+        <nav>
+            <ul class="navbar">
+                <li><button class="nav-btn" data-section="activites">Nos activités</button></li>
+                <li><button class="nav-btn" data-section="vie-associative">Vie associative</button></li>
+                <li><button class="nav-btn" data-section="contact">Contact & Infos</button></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="activites">
+        <section id="activites" class="section-content" style="display:none;">
             <h2>Nos activités</h2>
             <ul>
                 <li><strong>Danse moderne :</strong>
                     <ul>
-                        <li>Lundi :</li>
-                        <ul>
-                            <li>18h-19h : Adolescent</li>
-                            <li>20h-21h : Adulte</li>
-                        </ul>
-                        <li>Mercredi :</li>
-                        <ul>
-                            <li>16h-17h : Éveil</li>
-                            <li>17h-18h : Enfant</li>
-                        </ul>
+                        <li>Lundi :
+                            <ul>
+                                <li>18h-19h : Adolescent</li>
+                                <li>20h-21h : Adulte</li>
+                            </ul>
+                        </li>
+                        <li>Mercredi :
+                            <ul>
+                                <li>16h-17h : Éveil</li>
+                                <li>17h-18h : Enfant</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><strong>Danse contemporaine :</strong>
                     <ul>
-                        <li>Jeudi :</li>
-                        <ul>
-                            <li>18h-19h : Adolescent</li>
-                            <li>20h-21h : Adulte</li>
-                            <li>16h-17h : Éveil</li>
-                            <li>17h-18h : Enfant</li>
-                        </ul>
+                        <li>Jeudi :
+                            <ul>
+                                <li>18h-19h : Adolescent</li>
+                                <li>20h-21h : Adulte</li>
+                                <li>16h-17h : Éveil</li>
+                                <li>17h-18h : Enfant</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><strong>Danse classique :</strong>
                     <ul>
-                        <li>Samedi :</li>
-                        <ul>
-                            <li>Horaires à définir selon le niveau</li>
-                        </ul>
+                        <li>Samedi :
+                            <ul>
+                                <li>Horaires à définir selon le niveau</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><strong>Événements phares :</strong>
@@ -59,7 +70,7 @@
             </ul>
         </section>
 
-        <section id="vie-associative">
+        <section id="vie-associative" class="section-content" style="display:none;">
             <h2>Vie associative</h2>
             <ul>
                 <li>Présentation des professeurs</li>
@@ -74,7 +85,7 @@
             </ul>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section-content" style="display:none;">
             <h2>Contact & Infos</h2>
             <form id="contact-form">
                 <label for="nom">Nom :</label>
