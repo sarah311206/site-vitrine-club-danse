@@ -61,19 +61,8 @@
 
         <section id="vie-associative">
             <h2>Vie associative</h2>
-            <ul>
-                <li><a href="#" id="btn-professeurs">Présentation des professeurs</a></li>
-                <li><a href="#" id="btn-temoignages">Témoignages d’élèves</a></li>
-                <li><a href="#" id="btn-galerie">Galerie photo & vidéo</a></li>
-                <li><a href="#" id="btn-info-pratique">Informations pratiques</a></li>
-            </ul>
-        </section>
-
-        <!-- Modals -->
-        <div id="professeurs-info" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close-professeurs">&times;</span>
-                <h3>Nos professeurs</h3>
+            <details class="va-block">
+                <summary>Présentation des professeurs</summary>
                 <ul class="prof-list">
                     <li>
                         <strong>Marie Dupont</strong> – Danse moderne<br>
@@ -91,12 +80,9 @@
                         <p>Formée à l’Opéra de Paris, Élodie a à cœur la transmission des fondements classiques avec exigence et douceur. Elle valorise la progression de chaque élève, du plus jeune au plus confirmé.</p>
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div id="temoignages-info" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close-temoignages">&times;</span>
-                <h3>Retour d’expérience</h3>
+            </details>
+            <details class="va-block">
+                <summary>Témoignages d’élèves</summary>
                 <ul class="temoignages-list">
                     <li>
                         <p><strong>Anna, 16 ans</strong> : “Les cours de Marie m’ont permis de prendre confiance en moi et de progresser très vite, tout en m’amusant !”</p>
@@ -108,12 +94,9 @@
                         <p><strong>Sophie, maman d’élève</strong> : “Élodie est formidable avec les enfants. Ma fille adore venir chaque semaine !”</p>
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div id="galerie-info" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close-galerie">&times;</span>
-                <h3>Galerie photo & vidéo</h3>
+            </details>
+            <details class="va-block">
+                <summary>Galerie photo & vidéo</summary>
                 <div class="galerie-grid">
                     <img src="gala1.jpg" alt="Répétition de gala" class="galerie-img">
                     <img src="galerie2.jpg" alt="Cours enfants" class="galerie-img">
@@ -123,12 +106,9 @@
                         Votre navigateur ne prend pas en charge la vidéo.
                     </video>
                 </div>
-            </div>
-        </div>
-        <div id="info-pratique-info" class="modal">
-            <div class="modal-content">
-                <span class="close" id="close-info-pratique">&times;</span>
-                <h3>Informations pratiques</h3>
+            </details>
+            <details class="va-block">
+                <summary>Informations pratiques</summary>
                 <ul>
                     <li><strong>Modalités d’adhésion :</strong><br>
                         Inscription sur place ou en ligne. Tarifs : à partir de 150€/an, facilités de paiement possibles.</li>
@@ -140,9 +120,8 @@
                     <li><strong>Horaires accueil :</strong><br>
                         Lundi au samedi, 17h-21h</li>
                 </ul>
-            </div>
-        </div>
-        <!-- Fin modals -->
+            </details>
+        </section>
 
         <section id="contact">
             <h2>Contact & Infos</h2>
@@ -165,6 +144,24 @@
     <footer>
         <p>&copy; 2025 Club Elan & Grace - Tous droits réservés.</p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+    // Adhésion infos toggle
+    document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('show-info');
+        var info = document.getElementById('adhesion-info');
+        if(btn && info){
+            btn.addEventListener('click', function(e){
+                e.preventDefault();
+                if(info.style.display === 'none') {
+                    info.style.display = 'block';
+                    btn.textContent = "Masquer les infos d’adhésion";
+                } else {
+                    info.style.display = 'none';
+                    btn.textContent = "Voir les infos d’adhésion";
+                }
+            });
+        }
+    });
+    </script>
 </body>
 </html>
