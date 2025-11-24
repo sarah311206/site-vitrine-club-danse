@@ -62,17 +62,87 @@
         <section id="vie-associative">
             <h2>Vie associative</h2>
             <ul>
-                <li>Présentation des professeurs</li>
-                <li>Témoignages d’élèves</li>
-                <li>Galerie photo & vidéo</li>
-                <li>Informations pratiques :
-                    <ul>
-                        <li>Modalités d’adhésion</li>
-                        <li>Lieu : 12 rue de la Danse, Paris</li>
-                    </ul>
-                </li>
+                <li><a href="#" id="btn-professeurs">Présentation des professeurs</a></li>
+                <li><a href="#" id="btn-temoignages">Témoignages d’élèves</a></li>
+                <li><a href="#" id="btn-galerie">Galerie photo & vidéo</a></li>
+                <li><a href="#" id="btn-info-pratique">Informations pratiques</a></li>
             </ul>
         </section>
+
+        <!-- Modals -->
+        <div id="professeurs-info" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-professeurs">&times;</span>
+                <h3>Nos professeurs</h3>
+                <ul class="prof-list">
+                    <li>
+                        <strong>Marie Dupont</strong> – Danse moderne<br>
+                        <img src="marie.jpg" alt="Marie Dupont" class="photo-prof">
+                        <p>Diplômée du CNSMDP, Marie enseigne la danse moderne avec passion depuis plus de 12 ans. Pédagogue et créative, elle accompagne chacun vers l’expressivité et la confiance en soi.</p>
+                    </li>
+                    <li>
+                        <strong>Lucas Martin</strong> – Danse contemporaine<br>
+                        <img src="lucas.jpg" alt="Lucas Martin" class="photo-prof">
+                        <p>Lucas, chorégraphe et intervenant international, oriente ses ateliers vers l’expression corporelle et la liberté du mouvement. Il sait transmettre l’énergie collective à chaque cours.</p>
+                    </li>
+                    <li>
+                        <strong>Élodie Bernard</strong> – Danse classique<br>
+                        <img src="elodie.jpg" alt="Élodie Bernard" class="photo-prof">
+                        <p>Formée à l’Opéra de Paris, Élodie a à cœur la transmission des fondements classiques avec exigence et douceur. Elle valorise la progression de chaque élève, du plus jeune au plus confirmé.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="temoignages-info" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-temoignages">&times;</span>
+                <h3>Retour d’expérience</h3>
+                <ul class="temoignages-list">
+                    <li>
+                        <p><strong>Anna, 16 ans</strong> : “Les cours de Marie m’ont permis de prendre confiance en moi et de progresser très vite, tout en m’amusant !”</p>
+                    </li>
+                    <li>
+                        <p><strong>Julien, 24 ans</strong> : “La créativité de Lucas et l’ambiance du club rendent chaque séance unique. J’ai découvert mon style propre.”</p>
+                    </li>
+                    <li>
+                        <p><strong>Sophie, maman d’élève</strong> : “Élodie est formidable avec les enfants. Ma fille adore venir chaque semaine !”</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="galerie-info" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-galerie">&times;</span>
+                <h3>Galerie photo & vidéo</h3>
+                <div class="galerie-grid">
+                    <img src="gala1.jpg" alt="Répétition de gala" class="galerie-img">
+                    <img src="galerie2.jpg" alt="Cours enfants" class="galerie-img">
+                    <img src="spectacle.jpg" alt="Spectacle annuel" class="galerie-img">
+                    <video controls class="galerie-video">
+                        <source src="representation.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge la vidéo.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div id="info-pratique-info" class="modal">
+            <div class="modal-content">
+                <span class="close" id="close-info-pratique">&times;</span>
+                <h3>Informations pratiques</h3>
+                <ul>
+                    <li><strong>Modalités d’adhésion :</strong><br>
+                        Inscription sur place ou en ligne. Tarifs : à partir de 150€/an, facilités de paiement possibles.</li>
+                    <li><strong>Lieu :</strong><br>
+                        12 rue de la Danse, 75000 Paris. Accès métro Ligne 3 “Danse”.</li>
+                    <li><strong>Contact :</strong><br>
+                        Téléphone : 01 23 45 67 89<br>
+                        Email : contact@elanetgrace.fr</li>
+                    <li><strong>Horaires accueil :</strong><br>
+                        Lundi au samedi, 17h-21h</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Fin modals -->
 
         <section id="contact">
             <h2>Contact & Infos</h2>
